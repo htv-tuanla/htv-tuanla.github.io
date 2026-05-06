@@ -4,7 +4,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  background-image: url(../images/nen-rong-mo1.png);
+  background-image: url(../images/nen-rong-mo1.webp);
   background-repeat: repeat-y;
   background-size: 100% auto;
 }
@@ -358,7 +358,7 @@ h1, h2, h3, h4, h5, h6 {
     left: -100%;
   }
 }
-@media screen (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
 }
 /** ---------------------------------------------------------------
