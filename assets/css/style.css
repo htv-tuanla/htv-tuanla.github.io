@@ -708,9 +708,6 @@ section {
   padding: 60px 0;
   overflow: hidden;
 }
-.section-bg {
-  /* background-color: #f6f9fe; */
-}
 .section-title {
   text-align: center;
   padding-bottom: 30px;
@@ -2256,4 +2253,89 @@ section {
 }
 span {
   color: #106eea;
+}
+
+/*--------------------------------------------------------------
+# Premium Styles
+--------------------------------------------------------------*/
+:root {
+  --primary-gradient: linear-gradient(135deg, #106eea 0%, #3b8af2 100%);
+  --gold-gradient: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.3);
+}
+
+.section-title h3 span {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#header .logo a span {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.icon-box {
+  background: #fff;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #fff;
+}
+
+.icon-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px 0 rgba(68, 88, 144, 0.15);
+  border-color: #106eea;
+}
+
+.btn-primary {
+  background: var(--primary-gradient);
+  border: none;
+  box-shadow: 0 4px 15px rgba(16, 110, 234, 0.3);
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(16, 110, 234, 0.4);
+}
+
+/* Glassmorphism for Genealogy Toggle */
+.view-toggle {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--glass-border) !important;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.member-card {
+  border: none !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important;
+}
+
+.member-card .card-img-top {
+  transition: transform 0.5s ease;
+}
+
+.member-card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.member-card .card-title {
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
